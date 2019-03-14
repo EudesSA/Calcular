@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/calculando"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".CalcularSoma">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        android:text="@string/digite_os_valores"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/valorA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Valor A"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:textColor="#090909"
+        android:textSize="30sp"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/valorB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="Valor B"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:textColor="#090909"
+        android:background="@color/colorPrimary"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="somar"
+        android:text="Calcular"
+        android:textSize="36dp" />
+
+
+</LinearLayout>
